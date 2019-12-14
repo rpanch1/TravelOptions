@@ -223,12 +223,6 @@ private:
   *           any other option Y such that Y dominates X).  There are several equivalent
   *           ways of stating this property...
   *
-  * REQUIREMENTS:
-  *    - the list must be unaltered
-  *    - no memory allocation, arrays, etc. allowed
-  *    - RUNTIME:  quadratic in number of options n (i.e., O(n^2)).
-  *
-  * REMEMBER:  the list does not need to be sorted in order to be pareto
   */
   bool is_pareto() const{
     //if list is empty or has one option
@@ -256,7 +250,6 @@ private:
   *    - STRICTLY INCREASING IN price AND
   *    - STRICTLY DECREASING IN time 
   *
-  * COMMENTS:  notice that because of the runtime requirement, you cannot simply do this:
   *
   */
   bool is_pareto_sorted() const{
@@ -371,7 +364,7 @@ bool insert_sorted(double price, double time) {
  *       If the new option is suboptimal, the list is simply unchanged.
  *       In either case, true is returned (i.e., as long as the preconditions are met).
  *       
- * RUNTIME REQUIREMENT:  O(n)       
+ * RUNTIME :  O(n)       
  *
  */
 bool insert_pareto_sorted(double price, double time) {
