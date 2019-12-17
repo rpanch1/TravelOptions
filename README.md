@@ -1,5 +1,4 @@
 # TravelOptions
-Data Structures - Project1
 
 For this project I had to implement a C++ class called TravelOptions.
 This class has several functions to compare and sort different travel options.
